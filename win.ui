@@ -1,0 +1,29 @@
+<xml xmlns:pack="custom" xmlns:grid="custom" xmlns:run="custom" xmlns:gsize="custom" xmlns:signal="custom" xmlns:bind="custom">
+    <Tk id="mainWindow" run:title='["My test"]' run:geometry='["300x300"]'>
+        <Frame id="frame1" pack:anchor="nw" pack:fill="both" pack:expand="True">
+            <Label id="textField" pack:fill="x" background="white" fg="black" height="2" />
+            <Frame id="frame2" pack:fill="both" pack:expand="True" gsize:row='{"0": 1, "1": 1, "2": 1, "3": 1, "4": 1}' gsize:column='{"0": 1, "1": 1, "2": 1, "3": 1}'>
+                <Button id="digitBut1" text="1" command="click" grid:sticky="nswe" grid:row="0" grid:column="0" signal:click="click1" />
+                <Button id="digitBut2" text="2" command="click" grid:sticky="nswe" grid:row="0" grid:column="1" signal:click="click2" />
+                <Button id="digitBut3" text="3" command="click" grid:sticky="nswe" grid:row="0" grid:column="2" signal:click="click3" />
+                <Button id="digitBut4" text="4" command="click" grid:sticky="nswe" grid:row="1" grid:column="0" signal:click="click4" />
+                <Button id="digitBut5" text="5" command="click" grid:sticky="nswe" grid:row="1" grid:column="1" signal:click="click5" />
+                <Button id="digitBut6" text="6" command="click" grid:sticky="nswe" grid:row="1" grid:column="2" signal:click="click6" />
+                <Button id="digitBut7" text="7" command="click" grid:sticky="nswe" grid:row="2" grid:column="0" signal:click="click7" />
+                <Button id="digitBut8" text="8" command="click" grid:sticky="nswe" grid:row="2" grid:column="1" signal:click="click8" />
+                <Button id="digitBut9" text="9" command="click" grid:sticky="nswe" grid:row="2" grid:column="2" signal:click="click9" />
+                <Button id="digitBut0" text="0" command="click" grid:sticky="nswe" grid:row="3" grid:column="0" grid:columnspan="2" signal:click="click0" />
+                
+                <Button id="pointBut" text="." command="click" grid:sticky="nswe" grid:row="3" grid:column="2" signal:click="clickPoint" />
+                
+                <Button id="operButMult" text="*" command="click" grid:sticky="nswe" grid:row="0" grid:column="3" signal:click="clickMult" background="green" />
+                <Button id="operButAdd" text="+" command="click" grid:sticky="nswe" grid:row="1" grid:column="3" signal:click="clickAdd" background="green" />
+                <Button id="operButDiv" text="/" command="click" grid:sticky="nswe" grid:row="2" grid:column="3" signal:click="clickDiv" background="green" />
+                <Button id="operButSub" text="-" command="click" grid:sticky="nswe" grid:row="3" grid:column="3" signal:click="clickSub" background="green" />
+                
+                <Button id="operButCE" text="CE" command="click" grid:sticky="nswe" grid:row="4" grid:column="0" grid:columnspan="2" signal:click="clickClear" background="green" />
+                <Button id="operButEqual" text="=" command="click" grid:sticky="nswe" grid:row="4" grid:column="2" grid:columnspan="2" signal:click="clickEqual" background="green" />
+            </Frame>
+        </Frame>
+    </Tk>
+</xml>
